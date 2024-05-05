@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recipe Book</title>
+    <link rel="icon" href="recipe.png" type="image/x-icon">
+    <link rel="stylesheet" href="design.css">
+    
+</head>
+<body>
+
+    <div id="enlargedImgContainer" onclick="closeEnlargedImage()">
+        <img id="enlargedImg">
+    </div>
+    <div class="video-container">
+        <video id="video1" src="video1.mp4" autoplay loop muted></video>
+        <video id="video2" src="video2.mp4" autoplay loop muted></video>
+        <video id="video2" src="video3.mp4" autoplay loop muted></video>
+        <video id="video2" src="video4.mp4" autoplay loop muted></video>
+        <video id="video2" src="video5.mp4" autoplay loop muted></video>
+    </div>
+    
+    <header class="header">
+        <h1>Recipe Book</h1>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#recipe1">Recipe 1</a></li>
+            <li><a href="#recipe2">Recipe 2</a></li>
+            <li><a href="#recipe3">Recipe 3</a></li>
+            <li><a href="#recipe4">Recipe 4</a></li>
+        </ul>
+    </nav>
+    <div class="nav1"><button onclick="redirectToAnotherWebsite()" class="button1">Log out</button></div>
+
+    <main>
+        
+        <section id="recipe1">
+            <h2>Omelette</h2>
+            <img id="myImg1" src="recipe1.jpg" alt="Your Image" onclick="enlargeImage('myImg1')">
+            
+            <table border="2">
+                <tr>
+                    <td><h3>Ingredients</h3></td>
+                </tr>
+                <tr>
+                    <td> <ul>
+                        <li>Eggs</li>
+                        <li>Tomatoes</li>
+                        <li>green pepper</li>
+                        <li>spices(salt,black pepper and Hot powder)</li>
+                    </ul>
+                </td>
+                    
+                </tr>
+            
+                <tr>
+                    <td><h3>Instructions</h3></td>
+                </tr>
+                <tr>
+                    <td>  <ol>
+                        <li>mix all ingredients with each other</li>
+                        <li>put them in a pan which is on a Gas stove or oven and close it and let it cooked with the vapour and heat</li>
+                    </ol>
+                </td>
+                    
+                </tr>
+            </table>
+            
+            <div class="rating" class="background-image">
+                <p>Rate this recipe:</p>
+                <div class="stars" data-id="recipe1">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+            
+            <video width="320" height="240" controls>
+                <source src="Omelette.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+              
+        </section>
+
+        <section id="recipe2">
+            <h2>Pizza</h2>
+            <img id="myImg2" src="recipe2.jpg" alt="Your Image" onclick="enlargeImage('myImg2')">
+            
+            <table border="2">
+                <tr>
+                    <td><h3>Ingredients</h3></td>
+                </tr>
+                <tr>
+                    <td> <ul>
+                        <li>flour</li>
+                        <li>Yeast</li>
+                        <li>vegtables</li>
+                        <li>meat</li>
+                        <li>Water</li>
+                        <li>salt</li>
+                        <li>mozzarela</li>
+                    </ul>
+                </td>
+                    
+                </tr>
+            
+                <tr>
+                    <td><h3>Instructions</h3></td>
+                </tr>
+                <tr>
+                    <td>  <ol>
+                        <li>put 2 cups of flour with 1 spoon of yeast and 1/4 spoon of salt and put water slowly until it make a dough then shape it as you want then let it to rest</li>
+                        <li>start to give dough you shped the shape of the pizza then put the vegatbles and meat then put it in the oven or the gas stove then at the end put some mozzarela</li>
+                    </ol>
+                </td>
+                    
+                </tr>
+            </table>
+
+            
+            <div class="rating" class="background-image">
+                <p>Rate this recipe:</p>
+                <div class="stars" data-id="recipe2">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+
+            <video width="320" height="240" controls>
+                <source src="pizza.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </section>
+
+        <section id="recipe3">
+            <h2>Savory Bacon Jam</h2>
+            <img id="myImg3" src="recipe3.jpg" alt="Your Image" onclick="enlargeImage('myImg3')">
+            
+            <table border="2">
+                <tr>
+                    <td><h3>Ingredients</h3></td>
+                </tr>
+                <tr>
+                    <td> <ul>
+                        <li>1 lb bacon, chopped</li>
+                        <li>1 large onion, finely diced</li>
+                        <li>3 cloves garlic, minced</li>
+                        <li>1/2 cup brown sugar</li>
+                        <li>1/4 cup apple cider vinegar</li>
+                        <li>1/4 cup maple syrup</li>
+                        <li>1/4 tsp smoked paprika</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                </td>
+                    
+                </tr>
+            
+                <tr>
+                    <td><h3>Instructions</h3></td>
+                </tr>
+                <tr>
+                    <td>  <ol>
+                        <li>In a large skillet, cook the chopped bacon over medium heat until crispy. Remove bacon and drain on paper towels, reserving about 2 tbsp of bacon fat in the skillet.</li>
+                        <li>In the same skillet, sauté the diced onion and minced garlic in the bacon fat until softened and golden brown.</li>
+                        <li>Return the cooked bacon to the skillet. Add brown sugar, apple cider vinegar, maple syrup, smoked paprika, salt, and pepper. Stir well to combine.</li>
+                        <li>Reduce the heat to low and let the mixture simmer, stirring occasionally, until it thickens to a jam-like consistency, about 30-40 minutes.</li>
+                        <li>Remove from heat and let cool slightly. Transfer the bacon jam to sterilized jars and refrigerate. Serve on toast, burgers, or as a condiment for cheese boards.</li>
+                    </ol>
+                </td>
+                    
+                </tr>
+            </table>
+            
+            <div class="rating" class="background-image">
+                <p>Rate this recipe:</p>
+                <div class="stars" data-id="recipe3">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+
+            <video width="320" height="240" controls>
+                <source src="jam.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </section>
+
+        <section id="recipe4">
+            <h2>Gourmet Truffle Macaroni and Cheese</h2>
+            <img id="myImg4" src="recipe4.jpg" alt="Your Image" onclick="enlargeImage('myImg4')">
+            
+            <table border="2">
+                <tr>
+                    <td><h3>Ingredients</h3></td>
+                </tr>
+                <tr>
+                    <td> <ul>
+                        <li>8 oz macaroni or pasta of your choice</li>
+                        <li>2 cups whole milk</li>
+                        <li>1/4 cup unsalted butter</li>
+                        <li>1/4 cup all-purpose flour</li>
+                        <li>2 cups shredded Gruyere cheese</li>
+                        <li>1 cup shredded sharp cheddar cheese</li>
+                        <li>1/4 cup grated Parmesan cheese</li>
+                        <li>1/4 cup truffle oil</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                </td>
+                    
+                </tr>
+            
+                <tr>
+                    <td><h3>Instructions</h3></td>
+                </tr>
+                <tr>
+                    <td>  <ol>
+                        <li>Cook the macaroni according to package instructions until al dente. Drain and set aside.</li>
+                        <li>In a large saucepan, melt the butter over medium heat. Stir in the flour to create a roux, cooking for 2-3 minutes until lightly golden.</li>
+                        <li>Gradually whisk in the milk, stirring constantly to avoid lumps. Cook until the sauce thickens and coats the back of a spoon.</li>
+                        <li>Reduce the heat to low and add the shredded Gruyere, cheddar, and Parmesan cheese to the sauce, stirring until melted and smooth.</li>
+                        <li>Stir in the truffle oil and season with salt and pepper to taste.</li>
+                        <li>Add the cooked macaroni to the cheese sauce, tossing until well coated.</li>
+                        <li>Serve the truffle macaroni and cheese hot, garnished with a drizzle of extra truffle oil and freshly grated Parmesan cheese, if desired.</li>
+                    </ol>
+                </td>
+                    
+                </tr>
+            </table>
+            
+            <div class="rating" class="background-image">
+                <p>Rate this recipe:</p>
+                <div class="stars" data-id="recipe4">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+
+            <video width="320" height="240" controls>
+                <source src="mac and cheese.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </section>
+    </main>
+
+    <footer>
+        <h3>If there is any comment you can tell us</h3>
+        <form id="commentForm">
+           <input type="text" id="userName" placeholder="Your Name"><br>
+           <textarea id="commentText" rows="4" cols="50" placeholder="Write your comment here"></textarea><br>
+           <button type="submit">Submit Comment</button>
+        </form>
+        <p>&copy; 2024 Recipe Book</p>
+    </footer>
+    <script src="database.js"></script>
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var userName = document.getElementById('userName').value;
+            var comment = document.getElementById('commentText').value;
+            var existingComments = JSON.parse(localStorage.getItem('comments')) || [];
+            existingComments.push({ name: userName, comment: comment });
+            localStorage.setItem('comments', JSON.stringify(existingComments));
+            window.location.href = 'display.html';
+        });
+        function redirectToAnotherWebsite() {
+          window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

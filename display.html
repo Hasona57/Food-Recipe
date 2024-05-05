@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display Comments</title>
+    <link rel="icon" href="comments.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .deleteButton {
+            background-color: #f44336;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comments</h1>
+    <ul id="commentsList"></ul>
+
+    <button id="deleteButton" class="deleteButton">Delete All Comments</button>
+
+    <script>
+        var comments = JSON.parse(localStorage.getItem('comments')) || [];
+
+        if (comments.length > 0) {
+            const commentsList = document.getElementById('commentsList');
+            comments.forEach(commentData => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${commentData.name}: ${commentData.comment}`;
+                commentsList.appendChild(listItem);
+            });
+        }
+
+        document.getElementById('deleteButton').addEventListener('click', function() {
+            var password = prompt('Please enter the password to delete all comments:');
+            if (password === '123456789') {
+                localStorage.removeItem('comments');
+                location.reload(); // Refresh page to clear comments from display
+            } else {
+                alert('Incorrect password. Comments were not deleted.');
+            }
+        });
+    </script>
+</body>
+</html>
